@@ -1,0 +1,52 @@
+{
+  "expo": {
+    "name": "DSA",
+    "slug": "DSA",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "permissions": ["CAMERA", "CAMERA_ROLL"],
+    "plugins": [
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "The app accesses your photos to let you share them with your friends.",
+          "cameraPermission": "Let this app access your camera to take photos"
+        }
+      ],
+      "expo-font"
+    ],
+    "assetBundlePatterns": ["**/*"],
+    "ios": {
+      "supportsTablet": true,
+      "runtimeVersion": {
+        "policy": "appVersion"
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      },
+      "package": "com.singh_codes.DSA",
+      "runtimeVersion": "1.0.0"
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "16cfe317-38f9-48dc-a2f3-542626ea9f46"
+      }
+    },
+    "updates": {
+      "url": "https://u.expo.dev/16cfe317-38f9-48dc-a2f3-542626ea9f46"
+    }
+  }
+}
