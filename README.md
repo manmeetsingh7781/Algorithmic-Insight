@@ -14,10 +14,6 @@ Step 2. Scan this QR code on your mobile device camera
 
 
 
-or click on this link 
-
-https://expo.dev/preview/update?message=Final%20touch%2C%20fixed%20report%20bug%20fields%2C%20gave%20quizes%20a%20new%20seperate%20model%20so%20that%20it%20do%20not%20intterupt%20the%20main%20user%20chat%20box.&updateRuntimeVersion=1.0.0&createdAt=2024-05-02T08%3A07%3A38.103Z&slug=exp&projectId=16cfe317-38f9-48dc-a2f3-542626ea9f46&group=624ff81e-df21-43a3-b6f3-e5f7bf416984
-
 
 ## What is the Purpose of this Application?
 As a student, I've often felt like there's a missing bridge between studying from books or online sources and truly understanding a concept. It's essential to have a basic understanding of a concept before diving deeper into it and be mentally prepared for it.
