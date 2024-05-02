@@ -4,13 +4,13 @@ Algorithmic Insight - A Simplified Portal for Nerds
 # How to download this App
 Step 1. Download Expo Go 
  - iOS 13 and greater: https://apps.apple.com/us/app/expo-go/id982107779
- - Android Lollipop (5) and greater: ![link](https://play.google.com/store/apps/details?id=host.exp.exponent&pli=1)
+ - Android Lollipop (5) and greater: https://play.google.com/store/apps/details?id=host.exp.exponent&pli=1
 Step 2. Scan this QR code on your mobile device camera
 ![image](https://github.com/manmeetsingh7781/Algorithmic-Insight/assets/35901948/57613c3c-8770-4265-b6c8-34149eca9231)
 
 or click on this link 
 
-![link](https://expo.dev/preview/update?message=Final%20touch%2C%20fixed%20report%20bug%20fields%2C%20gave%20quizes%20a%20new%20seperate%20model%20so%20that%20it%20do%20not%20intterupt%20the%20main%20user%20chat%20box.&updateRuntimeVersion=1.0.0&createdAt=2024-05-02T08%3A07%3A38.103Z&slug=exp&projectId=16cfe317-38f9-48dc-a2f3-542626ea9f46&group=624ff81e-df21-43a3-b6f3-e5f7bf416984)
+https://expo.dev/preview/update?message=Final%20touch%2C%20fixed%20report%20bug%20fields%2C%20gave%20quizes%20a%20new%20seperate%20model%20so%20that%20it%20do%20not%20intterupt%20the%20main%20user%20chat%20box.&updateRuntimeVersion=1.0.0&createdAt=2024-05-02T08%3A07%3A38.103Z&slug=exp&projectId=16cfe317-38f9-48dc-a2f3-542626ea9f46&group=624ff81e-df21-43a3-b6f3-e5f7bf416984
 
 
 ## What is the Purpose of this Application?
