@@ -3,7 +3,7 @@ Algorithmic Insight - A Simplified Portal for Nerds
 
 # How to download this App
 Step 1. Download Expo Go 
- - iOS 13 and greater: ![link](https://apps.apple.com/us/app/expo-go/id982107779)
+ - iOS 13 and greater: https://apps.apple.com/us/app/expo-go/id982107779
  - Android Lollipop (5) and greater: ![link](https://play.google.com/store/apps/details?id=host.exp.exponent&pli=1)
 Step 2. Scan this QR code on your mobile device camera
 ![image](https://github.com/manmeetsingh7781/Algorithmic-Insight/assets/35901948/57613c3c-8770-4265-b6c8-34149eca9231)
