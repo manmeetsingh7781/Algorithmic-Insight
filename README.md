@@ -13,7 +13,7 @@ Step 2. Scan this QR code on your mobile device camera
 
 OR
 
-Click on this Link on Mobile exp://u.expo.dev/update/a41f11f7-6614-48f0-a160-b710d4cc1871
+Click on this Link on Mobile https://u.expo.dev/update/a41f11f7-6614-48f0-a160-b710d4cc1871
 
 
 
