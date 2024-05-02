@@ -1,7 +1,7 @@
 {
   "expo": {
     "name": "Algorithmic Insight",
-    "slug": "Algorithmic-Insight",
+    "slug": "DSA",
     "version": "1.0.0",
     "description": "An app build for students to help them focus, and learn Computer Science related topics",
     "orientation": "portrait",
@@ -35,7 +35,7 @@
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
       },
-      "package": "com.singh_codes.Algorithmic-Insight",
+      "package": "com.singh_codes.DSA",
       "runtimeVersion": "1.0.0"
     },
     "web": {
