@@ -1,6 +1,8 @@
 # Algorithmic-Insight
 Algorithmic Insight - A Simplified Portal for Nerds
 
+
+
 ## What is the Purpose of this Application?
 As a student, I've often felt like there's a missing bridge between studying from books or online sources and truly understanding a concept. It's essential to have a basic understanding of a concept before diving deeper into it and be mentally prepared for it.
 Have you ever found yourself wanting to learn the basics of a concept, like the A* star Algorithm, but got overwhelmed with too much detail all at once? This overload can lead to losing focus, being demotivated, and gaining nothing. If this sounds familiar, then Algorithmic Insight is designed for you. It aims to provide a straightforward understanding of the concepts you're eager to learn.
@@ -23,3 +25,5 @@ On demand lessons that AI will generate and prepare a lesson for user including 
 User progress, and performance, time spent, adding lessons of their choice (but will be verified and should follow the pattern of lesson in general).
 User should be able to discuss and interact with other users.
 And so on by following the law of Moore’s.
+
+**Assets used in this Application are from internet like Geeksforgeeks, or youtube creators and I give credits to them for the assets that I have used.**
