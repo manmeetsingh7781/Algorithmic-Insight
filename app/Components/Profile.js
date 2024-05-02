@@ -256,7 +256,7 @@ export default function Profile({ theme, navigation, resetApp }) {
               Level {currentLevel + 1}
             </Text>
           </View>
-          <ProgressBar progress={(user.XP % 100) / 100} />
+          <ProgressBar progress={(user.XP % 100) / 100 + 0.01} />
 
           {/* XP earned label */}
           <Tile leftLabel={"XP earned"} rightLable={user.XP} />

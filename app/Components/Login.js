@@ -5,6 +5,8 @@ import {
   TouchableOpacity,
   ImageBackground,
   Image,
+  KeyboardAvoidingView,
+  Platform,
 } from "react-native";
 import {
   TextInput,
@@ -18,21 +20,12 @@ import {
   createUserWithEmailAndPassword,
   onAuthStateChanged,
   signInWithEmailAndPassword,
-  signInWithPhoneNumber,
 } from "firebase/auth";
-import { AntDesign } from "@expo/vector-icons";
 import { DB } from "../FireBase/firebase";
 
 import { fullScreen } from "../globalVars";
 import { setUser } from "../Util/User";
-import {
-  addDoc,
-  collection,
-  doc,
-  setDoc,
-  Timestamp,
-  updateDoc,
-} from "firebase/firestore";
+import { addDoc, collection, doc, setDoc } from "firebase/firestore";
 import {
   datastructures_highlights,
   lesson_bookmarks,
@@ -148,7 +141,7 @@ export default function AuthPage({ setShowSignupPage }) {
   const [securePWD, setSecurePWD] = useState(true);
 
   // const [rememberMe, setRememberMe] = useState(true);
-
+  let isFormValid = !(loading || pwd.length < 8 || username.length <= 4);
   return (
     <ImageBackground
       resizeMode="cover"
@@ -160,7 +153,8 @@ export default function AuthPage({ setShowSignupPage }) {
           ...fullScreen,
           display: "flex",
           flexDirection: "column",
-          justifyContent: "center",
+          justifyContent: "flex-start",
+          paddingTop: Platform.OS === "ios" ? 120 : 80,
         }}
       >
         <View
@@ -278,44 +272,69 @@ export default function AuthPage({ setShowSignupPage }) {
             Remember me for next time
           </Text>
         </View> */}
-        <TouchableOpacity onPress={() => alert("Forgot Password feature")}>
-          <Text
-            variant="labelMedium"
-            style={{
-              paddingHorizontal: 30,
-              marginBottom: 10,
-              textAlign: "left",
-              fontWeight: "500",
-              color: "white",
-            }}
-          >
-            Forgot Password?
-          </Text>
-        </TouchableOpacity>
-        <View>
-          <View
-            style={{
-              display: "flex",
-              flexDirection: "row",
-              paddingHorizontal: 40,
-              justifyContent: "center",
-            }}
-          >
-            <Button
-              mode="contained"
-              disabled={loading || pwd.length < 8}
-              style={{ width: "70%" }}
-              accessibilityLabel="Signup Button"
-              onPress={() => {
-                if (username.length > 0 && pwd.length > 0) {
-                  loginWithEmailPwd(username, pwd);
-                }
+        {/* <TouchableOpacity onPress={() => alert("Forgot Password feature")}>
+            <Text
+              variant="labelMedium"
+              style={{
+                paddingHorizontal: 30,
+                marginBottom: 10,
+                textAlign: "left",
+                fontWeight: "500",
+                color: "white",
               }}
             >
-              <Text style={{ color: "white" }}>Login</Text>
-            </Button>
-          </View>
-          <View
+              Forgot Password?
+            </Text>
+          </TouchableOpacity> */}
+
+        <View
+          style={{
+            flexDirection: "row",
+            gap: 10,
+            justifyContent: "space-around",
+            width: "100%",
+            alignContent: "space-around",
+          }}
+        >
+          <Button
+            disabled={!isFormValid}
+            style={{
+              width: "40%",
+              backgroundColor: isFormValid ? MD2Colors.purple400 : "black",
+              opacity: isFormValid ? 1 : 0.7,
+            }}
+            mode="contained"
+            accessibilityLabel="Signup Button"
+            onPress={() => {
+              if (isFormValid) {
+                signupWithEmailPwd(username, pwd);
+              } else {
+                alert("Please fill out the form");
+              }
+            }}
+          >
+            <Text style={{ color: "white" }}>Signup</Text>
+          </Button>
+          <Button
+            style={{
+              width: "40%",
+              backgroundColor: isFormValid ? MD2Colors.purple400 : "black",
+              opacity: isFormValid ? 1 : 0.7,
+            }}
+            mode="contained"
+            disabled={!isFormValid}
+            accessibilityLabel="Login Button"
+            onPress={() => {
+              if (isFormValid) {
+                loginWithEmailPwd(username, pwd);
+              } else {
+                alert("Please fill out the form");
+              }
+            }}
+          >
+            <Text style={{ color: "white" }}>Login</Text>
+          </Button>
+          {/* <View
             style={{
               paddingHorizontal: 40,
               marginVertical: 10,
@@ -328,31 +347,10 @@ export default function AuthPage({ setShowSignupPage }) {
                 shadowOffset: 0.5,
               }}
             />
-          </View>
-
-          <View
-            style={{
-              display: "flex",
-              flexDirection: "row",
-              paddingHorizontal: 40,
-              justifyContent: "center",
-            }}
-          >
-            <Button
-              disabled={loading || pwd.length < 8}
-              mode="contained"
-              style={{ width: "70%", marginBottom: 20 }}
-              accessibilityLabel="Signup Button"
-              onPress={() => {
-                if (username.length > 0 && pwd.length > 0) {
-                  signupWithEmailPwd(username, pwd);
-                }
-              }}
-            >
-              <Text style={{ color: "white" }}>Signup</Text>
-            </Button>
-          </View>
+          </View> */}
         </View>
+
+        {/* Footer label - secured by Google */}
         <View
           style={{
             position: "absolute",
@@ -385,6 +383,7 @@ export default function AuthPage({ setShowSignupPage }) {
             source={require("../../assets/icons8-google-48.png")}
           />
         </View>
+
         {loading && <ActivityIndicator size={"large"} />}
       </View>
     </ImageBackground>
