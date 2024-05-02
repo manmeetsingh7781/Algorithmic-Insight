@@ -1,19 +1,11 @@
 import { useEffect, useLayoutEffect, useState } from "react";
 
-import { Avatar, Button, PaperProvider } from "react-native-paper";
-import {
-  Platform,
-  TouchableOpacity,
-  Image,
-  View,
-  Text,
-  ViewBase,
-} from "react-native";
+import { Avatar, PaperProvider } from "react-native-paper";
+import { Platform, TouchableOpacity, Image, View } from "react-native";
 import { Theme, setQuesionAI } from "./app/globalVars";
 import { NavigationContainer } from "@react-navigation/native";
 import { StatusBar } from "expo-status-bar";
 
-import Ionicons from "@expo/vector-icons/Ionicons";
 import { MaterialCommunityIcons } from "@expo/vector-icons";
 import StartUpScreen from "./app/Components/StartUpScreen";
 import Lesson from "./app/Components/Lesson.js";
@@ -24,7 +16,7 @@ import Bookmarks from "./app/Components/Bookmarks.js";
 import About from "./app/Components/About.js";
 import * as Font from "expo-font";
 import ChatHistory from "./app/Components/ChatHistory.js";
-import { generateLesson, generateQuickQuestion } from "./app/Util/GenAi.js";
+import { generateQuickQuestion } from "./app/Util/GenAi.js";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import { Quiz } from "./app/Components/Quiz.js";

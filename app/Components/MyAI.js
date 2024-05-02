@@ -95,9 +95,7 @@ const Convo = ({ c, k1, index, wasChanged, part, theme, loading }) => (
             }}
           >
             {/* Label of user's first and last name or an Avatar */}
-
             <UserAvatar />
-
             <Text
               style={{
                 paddingLeft: 5,

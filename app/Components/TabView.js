@@ -9,6 +9,7 @@ import { Theme } from "../globalVars.js";
 import MyAI from "./MyAI.js";
 import { user } from "../Util/User.js";
 
+// Tab views of this app are rendered here
 export default function TabView({ Tab, navigation, theme }) {
   const tabBarStyleSettings = {
     ...theme["headerStyle"],

@@ -1,17 +1,18 @@
 {
   "expo": {
-    "name": "DSA",
-    "slug": "DSA",
+    "name": "Algorithmic Insight",
+    "slug": "Algorithmic-Insight",
     "version": "1.0.0",
+    "description": "An app build for students to help them focus, and learn Computer Science related topics",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
+    "icon": "./assets/banner2.gif",
     "userInterfaceStyle": "light",
     "splash": {
-      "image": "./assets/splash.png",
-      "resizeMode": "contain",
+      "image": "./assets/banner2.gif",
+      "resizeMode": "cover",
       "backgroundColor": "#ffffff"
     },
-    "permissions": ["CAMERA", "CAMERA_ROLL"],
+
     "plugins": [
       [
         "expo-image-picker",
@@ -34,7 +35,7 @@
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
       },
-      "package": "com.singh_codes.DSA",
+      "package": "com.singh_codes.Algorithmic-Insight",
       "runtimeVersion": "1.0.0"
     },
     "web": {
