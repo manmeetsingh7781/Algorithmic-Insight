@@ -9,13 +9,16 @@ Step 1. Download Expo Go
 
 Step 2. Scan this QR code on your mobile device camera
 
-![image](https://github.com/manmeetsingh7781/Algorithmic-Insight/assets/35901948/57613c3c-8770-4265-b6c8-34149eca9231)
+![image](https://github.com/manmeetsingh7781/Algorithmic-Insight/assets/35901948/9348d116-af68-47b2-9e00-8f2da50607a8)
+
 
 OR
 
-Click on this Link on Mobile 
+Click on any of the links below on Mobile 
 
-exp://u.expo.dev/update/a41f11f7-6614-48f0-a160-b710d4cc1871
+Link #1 https://shorturl.at/kCFQ1
+
+Link #2 https://tinyurl.com/algorithmic-Insight
 
 
 
