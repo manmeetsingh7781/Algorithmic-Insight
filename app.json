@@ -1,0 +1,59 @@
+{
+  "expo": {
+    "name": "Algorithmic Insight",
+    "slug": "DSA",
+    "version": "1.0.0",
+    "description": "An app build for students to help them focus, and learn Computer Science related topics",
+    "orientation": "portrait",
+    "icon": "./assets/banner2.gif",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/banner2.gif",
+      "resizeMode": "cover",
+      "backgroundColor": "#ffffff"
+    },
+
+    "plugins": [
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "The app accesses your photos to let you share them with your friends.",
+          "cameraPermission": "Let this app access your camera to take photos"
+        }
+      ],
+      [
+        "expo-font",
+        {
+          "fonts": ["./assets/FontsFree-Net-SLC_.ttf"]
+        }
+      ]
+    ],
+
+    "assetBundlePatterns": ["**/*"],
+    "ios": {
+      "supportsTablet": true,
+      "runtimeVersion": {
+        "policy": "appVersion"
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      },
+      "package": "com.singh_codes.DSA",
+      "runtimeVersion": "1.0.0"
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "16cfe317-38f9-48dc-a2f3-542626ea9f46"
+      }
+    },
+    "updates": {
+      "url": "https://u.expo.dev/16cfe317-38f9-48dc-a2f3-542626ea9f46"
+    }
+  }
+}
