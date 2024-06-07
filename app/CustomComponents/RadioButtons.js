@@ -38,7 +38,7 @@ export default function RadioButtons({
         backgroundColor:
           selected !== null
             ? answer === item
-              ? "green"
+              ? "#02c926"
               : getAnsColor(index)
             : "transparent",
         padding: 10,
