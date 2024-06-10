@@ -20,7 +20,7 @@ const highLightSingleWord = (children, start, end, variant, color) => {
     <Text
       key={uniqid(start, end)}
       variant={variant}
-      style={{ backgroundColor: color, padding: "0 5px" }}
+      style={{ color: color, padding: "0 5px" }}
     >
       {word}
     </Text>
@@ -264,7 +264,7 @@ export async function highLight(
                     key={uniqid(start, end)}
                     variant={variant}
                     style={{
-                      backgroundColor: highlightColor,
+                      color: highlightColor,
                       padding: "0 5px",
                     }}
                   >

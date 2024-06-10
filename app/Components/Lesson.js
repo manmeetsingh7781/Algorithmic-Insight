@@ -544,7 +544,7 @@ export default function Lesson({ theme, navigation, route }) {
           style={{ paddingTop: 10, color: theme["color"] }}
           accessibilityLabel={`Take quiz of ${current_lesson["title"]}`}
         >
-          Ready to put your knowledge to the test?🤖
+          Ready to put your knowledge to the test?
         </Text>
         <Text
           color={theme["color"]}
@@ -571,8 +571,10 @@ export default function Lesson({ theme, navigation, route }) {
             });
           }}
         >
-          Take Quiz
-          {!quizLoaded && <ActivityIndicator style={{ paddingLeft: 10 }} />}
+          <Text style={{ color: theme["color"] }}>
+            Take Quiz{" "}
+            {!quizLoaded && <ActivityIndicator style={{ paddingLeft: 10 }} />}
+          </Text>
         </Button>
       </View>
       <View style={{ marginBottom: 50 }} />
